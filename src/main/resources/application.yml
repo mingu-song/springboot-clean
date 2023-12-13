@@ -3,21 +3,19 @@ spring:
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
     password: postgres
+
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
     open-in-view: true
+
   jackson:
     serialization:
       fail-on-empty-beans: false
+
 server:
   error:
     include-stacktrace: never
   port: 8080
 
-# jwt
-api:
-  security:
-    token:
-      secret: ${JWT_SECRET:12345678}
