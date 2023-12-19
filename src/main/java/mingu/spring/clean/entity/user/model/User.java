@@ -1,11 +1,13 @@
 package mingu.spring.clean.entity.user.model;
 
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import mingu.spring.clean.entity.AbstractEntity;
 
-@Getter
-@Setter
+@EqualsAndHashCode(callSuper = true)
+@Data
 public abstract class User extends AbstractEntity<Long> {
 
     private String username;

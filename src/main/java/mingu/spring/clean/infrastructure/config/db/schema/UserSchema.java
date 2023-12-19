@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-@DiscriminatorColumn
+@DiscriminatorColumn(discriminatorType = DiscriminatorType.STRING)
 @Table(name = "Userz")
 public abstract class UserSchema extends AbstractEntitySchema<Long> {
     @NotBlank

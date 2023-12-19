@@ -1,4 +1,4 @@
-package mingu.spring.clean.infrastructure.admin.exception;
+package mingu.spring.clean.infrastructure.config.exception;
 
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.validation.ConstraintViolation;
