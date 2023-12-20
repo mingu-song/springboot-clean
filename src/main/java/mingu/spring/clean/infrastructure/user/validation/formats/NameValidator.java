@@ -1,4 +1,4 @@
-package mingu.spring.clean.infrastructure.annotation.validation.formats;
+package mingu.spring.clean.infrastructure.user.validation.formats;
 
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;

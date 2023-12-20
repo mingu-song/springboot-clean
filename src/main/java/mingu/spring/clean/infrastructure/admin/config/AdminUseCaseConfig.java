@@ -1,4 +1,4 @@
-package mingu.spring.clean.infrastructure.admin.usecase;
+package mingu.spring.clean.infrastructure.admin.config;
 
 import mingu.spring.clean.entity.admin.gateway.AdminGateway;
 import mingu.spring.clean.infrastructure.admin.gateway.AdminDatabaseGateway;
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class AdminUseCase {
+public class AdminUseCaseConfig {
 
     @Bean
     public AdminGateway adminGateway(AdminRepository adminRepository) {

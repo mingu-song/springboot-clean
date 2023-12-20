@@ -1,4 +1,4 @@
-package mingu.spring.clean.infrastructure.annotation.validation.formats;
+package mingu.spring.clean.infrastructure.user.validation.unique;
 
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;
@@ -8,11 +8,13 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Constraint(validatedBy = NameValidator.class)
+@Constraint(validatedBy = UniqueUsernameValidator.class)
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Name {
-    String message() default "Input a valid name.";
+public @interface UniqueUsername {
+    String message() default "Username is already registered";
+
     Class<?>[] groups() default {};
+
     Class<? extends Payload>[] payload() default {};
 }
