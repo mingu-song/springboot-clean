@@ -18,6 +18,9 @@ spring:
     serialization:
       fail-on-empty-beans: false
 
+  messages:
+    fallback-to-system-locale: false # messages.properties 에서 기본값을 가져옴 (헤더가 없다면 디폴트 언어)
+
 server:
   error:
     include-stacktrace: never

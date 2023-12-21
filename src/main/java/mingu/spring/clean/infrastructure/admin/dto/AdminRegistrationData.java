@@ -14,10 +14,10 @@ public record AdminRegistrationData(
         @NotBlank
         String password,
         @NotBlank
-        @Name(message = "{Name.user.name}")
+        @Name(message = "{USER_VALID_NAME}")
         String name,
         @UniqueEmail(message = "{Unique.user.email}")
         @NotBlank
-        @Email(message = "{Email.user.email}")
+        @Email(message = "{USER_VALID_EMAIL}")
         String email
 ) implements IAdminRegistrationData { }
